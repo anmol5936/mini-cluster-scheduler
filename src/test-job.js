@@ -1,5 +1,7 @@
 const Job = require("./job");
 
-const job1 = new Job("1", 5, { task:"calculate" });
+const job = new Job("1", 5, { task:"calculate" });
 
-console.log(job1.toJSON()); 
+console.log(job);
+console.log(job.toJSON()); 
+console.log('JSON string:', JSON.stringify(job.toJSON()));
